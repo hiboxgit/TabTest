@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TabTest.iml" filepath="$PROJECT_DIR$/TabTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamicgrid/dynamicgrid.iml" filepath="$PROJECT_DIR$/dynamicgrid/dynamicgrid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/touchimageviewlibrary/touchimageviewlibrary.iml" filepath="$PROJECT_DIR$/touchimageviewlibrary/touchimageviewlibrary.iml" />
     </modules>
   </component>
 </project>

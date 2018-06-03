@@ -8,6 +8,9 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.bumptech.glide.Glide;
+import com.rrtoyewx.touchimageviewlibrary.TouchImageView;
+
 public class LoTestActivity extends Activity {
 
     @Override
@@ -15,6 +18,11 @@ public class LoTestActivity extends Activity {
         super.onCreate(savedInstanceState);
         showStatusBar();
         setContentView(R.layout.activity_lo_test);
+
+        TouchImageView imageView = (TouchImageView)findViewById(R.id.tiv_main_image);
+        Glide.with(this)
+                .load("http://pic1.win4000.com/mobile/1/520d9410ebc79.jpg")
+                .into(imageView);
     }
 
     private void showStatusBar() { //使得布局内容可以填充整个屏幕，状态栏悬浮在布局上面，
@@ -24,8 +32,6 @@ public class LoTestActivity extends Activity {
 //
 //        getWindow().addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN);
 //        getWindow().addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-
-
 
 //        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
 //        getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
